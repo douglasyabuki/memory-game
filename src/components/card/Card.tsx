@@ -6,10 +6,14 @@ interface CardProps {
   isFlipped: boolean;
   onClick: () => void;
   frontImage: string;
+  soundEnabled: () => boolean;
 }
 
 export const Card: Component<CardProps> = (props) => {
-  useSoundEffect("/card-flip.mp3", () => props.isFlipped);
+  useSoundEffect("/card-flip.mp3", () => props.isFlipped, {
+    defer: false,
+    enabled: props.soundEnabled,
+  });
 
   return (
     <div class={style["card-container"]} onClick={props.onClick}>
