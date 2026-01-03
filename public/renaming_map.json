@@ -1,0 +1,948 @@
+{
+  "effect-monster-cards": [
+    {
+      "original": "A Luz - Fusão Selada por Feitiço",
+      "new": "000"
+    },
+    {
+      "original": "Aprendiz de Bruxa",
+      "new": "001"
+    },
+    {
+      "original": "Blader Notável",
+      "new": "002"
+    },
+    {
+      "original": "Bruxa da Floresta Negra",
+      "new": "003"
+    },
+    {
+      "original": "Carniçal das Sombras",
+      "new": "004"
+    },
+    {
+      "original": "Castelo das Ilusões Sombrias",
+      "new": "005"
+    },
+    {
+      "original": "Casulo de Evolução",
+      "new": "006"
+    },
+    {
+      "original": "Ceifeiro de Espíritos",
+      "new": "007"
+    },
+    {
+      "original": "Delta, o Guerreiro Ímã",
+      "new": "008"
+    },
+    {
+      "original": "Des Lacooda",
+      "new": "009"
+    },
+    {
+      "original": "Dragão de estimação da harpia",
+      "new": "010"
+    },
+    {
+      "original": "Dragão Toon de Olhos Azuis",
+      "new": "011"
+    },
+    {
+      "original": "Dragão Toon de Olhos Vermelhos",
+      "new": "012"
+    },
+    {
+      "original": "Elfa Negra",
+      "new": "013"
+    },
+    {
+      "original": "Esfinge Andro",
+      "new": "014"
+    },
+    {
+      "original": "Esfinge Teleia",
+      "new": "015"
+    },
+    {
+      "original": "Exodia, O Proibido",
+      "new": "016"
+    },
+    {
+      "original": "Feiticeiro do Caos",
+      "new": "017"
+    },
+    {
+      "original": "Grande Moth Final Perfeito",
+      "new": "018"
+    },
+    {
+      "original": "Grande Moth",
+      "new": "019"
+    },
+    {
+      "original": "Grande Olho",
+      "new": "020"
+    },
+    {
+      "original": "Guardião do Portão",
+      "new": "021"
+    },
+    {
+      "original": "Guardião Elma",
+      "new": "022"
+    },
+    {
+      "original": "Guerreiro Foguete",
+      "new": "023"
+    },
+    {
+      "original": "Hane-Hane",
+      "new": "024"
+    },
+    {
+      "original": "Homem das Espadas Místicas LV2",
+      "new": "025"
+    },
+    {
+      "original": "Homem Karate",
+      "new": "026"
+    },
+    {
+      "original": "Horus, o Dragão da Chama Negra LV4",
+      "new": "027"
+    },
+    {
+      "original": "Hoshiningen",
+      "new": "028"
+    },
+    {
+      "original": "Ilusionista de Olhos Negros",
+      "new": "029"
+    },
+    {
+      "original": "Imitador",
+      "new": "030"
+    },
+    {
+      "original": "Inseto devorador de Homens",
+      "new": "031"
+    },
+    {
+      "original": "Jarro Cibernético",
+      "new": "032"
+    },
+    {
+      "original": "Jarro Metamórfico",
+      "new": "033"
+    },
+    {
+      "original": "Jinzo",
+      "new": "034"
+    },
+    {
+      "original": "Jirai Gumo",
+      "new": "035"
+    },
+    {
+      "original": "Joaninha com Marca de Caveira",
+      "new": "036"
+    },
+    {
+      "original": "Kazejin",
+      "new": "037"
+    },
+    {
+      "original": "Kiseitai",
+      "new": "038"
+    },
+    {
+      "original": "Kuriboh",
+      "new": "039"
+    },
+    {
+      "original": "Lady Harpia Toon",
+      "new": "040"
+    },
+    {
+      "original": "Maga da Fé",
+      "new": "041"
+    },
+    {
+      "original": "Magikuriboh",
+      "new": "042"
+    },
+    {
+      "original": "Mago do Tempo",
+      "new": "043"
+    },
+    {
+      "original": "Maha Vailo",
+      "new": "044"
+    },
+    {
+      "original": "Manga ryu-ran",
+      "new": "045"
+    },
+    {
+      "original": "Máscara da Escuridão",
+      "new": "046"
+    },
+    {
+      "original": "Menino Estrela",
+      "new": "047"
+    },
+    {
+      "original": "Mestre das Armadilhas",
+      "new": "048"
+    },
+    {
+      "original": "Metalzoa",
+      "new": "049"
+    },
+    {
+      "original": "Milus Radiante",
+      "new": "050"
+    },
+    {
+      "original": "Muka Muka Enraivecido",
+      "new": "051"
+    },
+    {
+      "original": "Ninja Armado",
+      "new": "052"
+    },
+    {
+      "original": "O Dragão Alado de Rá",
+      "new": "053"
+    },
+    {
+      "original": "O Pescador Lendário",
+      "new": "054"
+    },
+    {
+      "original": "Obelisco, o Atormentador",
+      "new": "055"
+    },
+    {
+      "original": "Parede das Sombras",
+      "new": "056"
+    },
+    {
+      "original": "Pequena Maga Negra",
+      "new": "057"
+    },
+    {
+      "original": "Peten, o Palhaço das Trevas",
+      "new": "058"
+    },
+    {
+      "original": "Pumpking, o rei dos fantasmas",
+      "new": "059"
+    },
+    {
+      "original": "Rei Caveira Toon",
+      "new": "060"
+    },
+    {
+      "original": "Sábio Negro",
+      "new": "061"
+    },
+    {
+      "original": "Samurai Sasuke",
+      "new": "062"
+    },
+    {
+      "original": "Sanga do Trovão",
+      "new": "063"
+    },
+    {
+      "original": "Sangan",
+      "new": "064"
+    },
+    {
+      "original": "Senhor dos Dragões",
+      "new": "065"
+    },
+    {
+      "original": "Soldado do Lustro Negro - Enviado do Princípio",
+      "new": "066"
+    },
+    {
+      "original": "Soldado Pinguim",
+      "new": "067"
+    },
+    {
+      "original": "Suijin",
+      "new": "068"
+    },
+    {
+      "original": "Theinen, a Grande Esfinge",
+      "new": "069"
+    },
+    {
+      "original": "Touro Guerreiro Enfurecido",
+      "new": "070"
+    },
+    {
+      "original": "Um Homem com Wdjat",
+      "new": "071"
+    },
+    {
+      "original": "Valkyrion, o Guerreiro Imã",
+      "new": "072"
+    },
+    {
+      "original": "Verme Agulha",
+      "new": "073"
+    },
+    {
+      "original": "Watapon",
+      "new": "074"
+    },
+    {
+      "original": "Zombyra, o Negro",
+      "new": "075"
+    }
+  ],
+  "fusion-monster-cards": [
+    {
+      "original": "Areia Mística",
+      "new": "000"
+    },
+    {
+      "original": "Cavaleiro da Chama Negra",
+      "new": "001"
+    },
+    {
+      "original": "Dragão Caveira Negro",
+      "new": "002"
+    },
+    {
+      "original": "Dragão do Trovão de Duas Cabeças",
+      "new": "003"
+    },
+    {
+      "original": "Dragão Meteórico Negro",
+      "new": "004"
+    },
+    {
+      "original": "Dragão Milenar",
+      "new": "005"
+    },
+    {
+      "original": "Dragão Supremo de olhos azuis",
+      "new": "006"
+    },
+    {
+      "original": "Espadachim das Chamas",
+      "new": "007"
+    },
+    {
+      "original": "Gaia, o Matador de Dragões",
+      "new": "008"
+    },
+    {
+      "original": "Grande Mamute de Goldfine",
+      "new": "009"
+    },
+    {
+      "original": "Magnum Imperion, o Robô de Batalha Supercondutor",
+      "new": "010"
+    },
+    {
+      "original": "Paladino Negro",
+      "new": "011"
+    },
+    {
+      "original": "Pequena Maga Negra, a Cavaleira Dragão",
+      "new": "012"
+    },
+    {
+      "original": "Supremo Cavaleiro Mestre dos Dragões",
+      "new": "013"
+    }
+  ],
+  "magic-cards": [
+    {
+      "original": "A Flauta para Invocação de Dragões",
+      "new": "000"
+    },
+    {
+      "original": "Absorção de Magia",
+      "new": "001"
+    },
+    {
+      "original": "Arsenal Oculto",
+      "new": "002"
+    },
+    {
+      "original": "Bode Expiatório",
+      "new": "003"
+    },
+    {
+      "original": "Buraco Negro",
+      "new": "004"
+    },
+    {
+      "original": "Caixa Mágica",
+      "new": "005"
+    },
+    {
+      "original": "Caridade Graciosa",
+      "new": "006"
+    },
+    {
+      "original": "Chifre do Unicórnio",
+      "new": "007"
+    },
+    {
+      "original": "Controle Cerebral",
+      "new": "008"
+    },
+    {
+      "original": "Destruição de Cards",
+      "new": "009"
+    },
+    {
+      "original": "Dian Keto, Mestre da Cura",
+      "new": "010"
+    },
+    {
+      "original": "Escudo & Espada",
+      "new": "011"
+    },
+    {
+      "original": "Espadas da Luz Reveladora",
+      "new": "012"
+    },
+    {
+      "original": "Execução De Um Contrato",
+      "new": "013"
+    },
+    {
+      "original": "Fissura",
+      "new": "014"
+    },
+    {
+      "original": "Fôlego da Luz",
+      "new": "015"
+    },
+    {
+      "original": "Ganância do Caos",
+      "new": "016"
+    },
+    {
+      "original": "Goblin Inexperiente",
+      "new": "017"
+    },
+    {
+      "original": "Impedir a Defesa",
+      "new": "018"
+    },
+    {
+      "original": "Labirinto Mágico",
+      "new": "019"
+    },
+    {
+      "original": "Libertar Almas",
+      "new": "020"
+    },
+    {
+      "original": "Machado do Desespero2",
+      "new": "021"
+    },
+    {
+      "original": "Memória Apagada",
+      "new": "022"
+    },
+    {
+      "original": "Mudança de Opinião",
+      "new": "023"
+    },
+    {
+      "original": "Multiplicação",
+      "new": "024"
+    },
+    {
+      "original": "Mundo Toon",
+      "new": "025"
+    },
+    {
+      "original": "Pendente Negro",
+      "new": "026"
+    },
+    {
+      "original": "Polimerização",
+      "new": "027"
+    },
+    {
+      "original": "Pote da Ganância",
+      "new": "028"
+    },
+    {
+      "original": "Raigeki",
+      "new": "029"
+    },
+    {
+      "original": "Reino toon",
+      "new": "030"
+    },
+    {
+      "original": "Reviver Monstro",
+      "new": "031"
+    },
+    {
+      "original": "Roubo Precipitado",
+      "new": "032"
+    },
+    {
+      "original": "Salamandra",
+      "new": "033"
+    },
+    {
+      "original": "Tempestade Pesada",
+      "new": "034"
+    },
+    {
+      "original": "Tornado Gigante",
+      "new": "035"
+    },
+    {
+      "original": "Troca de Almas",
+      "new": "036"
+    },
+    {
+      "original": "Troca",
+      "new": "037"
+    },
+    {
+      "original": "Tufão Espacial Místico",
+      "new": "038"
+    }
+  ],
+  "regular-monster-cards": [
+    {
+      "original": "Alfa, o Guerreiro Imã",
+      "new": "000"
+    },
+    {
+      "original": "Alforreca",
+      "new": "001"
+    },
+    {
+      "original": "Aqua Madoor",
+      "new": "002"
+    },
+    {
+      "original": "Beta, o Guerreiro Imã",
+      "new": "003"
+    },
+    {
+      "original": "Braço Direito de O Proibido",
+      "new": "004"
+    },
+    {
+      "original": "Braço Esquerdo de O Proibido",
+      "new": "005"
+    },
+    {
+      "original": "Caça-Níquel",
+      "new": "006"
+    },
+    {
+      "original": "Caçador Mecânico",
+      "new": "007"
+    },
+    {
+      "original": "Castor Guerreiro",
+      "new": "008"
+    },
+    {
+      "original": "Cemitério de Mamutes",
+      "new": "009"
+    },
+    {
+      "original": "Cerebrus de chamas",
+      "new": "010"
+    },
+    {
+      "original": "Comandante Cibernético",
+      "new": "011"
+    },
+    {
+      "original": "Cortina dos Obscuros",
+      "new": "012"
+    },
+    {
+      "original": "Cycroid",
+      "new": "013"
+    },
+    {
+      "original": "Demônio Selvagem",
+      "new": "014"
+    },
+    {
+      "original": "Dragão Alado, Guardião da Fortaleza Nº1",
+      "new": "015"
+    },
+    {
+      "original": "Dragão Bebê(Filhote)",
+      "new": "016"
+    },
+    {
+      "original": "Dragão Branco de Olhos Azuis5",
+      "new": "017"
+    },
+    {
+      "original": "Dragão de Fogo da Terra Negra",
+      "new": "018"
+    },
+    {
+      "original": "Dragão Meteórico",
+      "new": "019"
+    },
+    {
+      "original": "Dragão Negro de Olhos Vermelhos",
+      "new": "020"
+    },
+    {
+      "original": "Dragão Zumbi",
+      "new": "021"
+    },
+    {
+      "original": "Dragão-Serpente da Noite",
+      "new": "022"
+    },
+    {
+      "original": "Elfa Mística",
+      "new": "023"
+    },
+    {
+      "original": "Elfo Ancião",
+      "new": "024"
+    },
+    {
+      "original": "Elfos Gêmeos",
+      "new": "025"
+    },
+    {
+      "original": "Épsilon, o Guerreiro Ímã",
+      "new": "026"
+    },
+    {
+      "original": "Escudo do Milênio",
+      "new": "027"
+    },
+    {
+      "original": "Espadachim Sorrateiro",
+      "new": "028"
+    },
+    {
+      "original": "Gaia, o Cavaleiro Impetuoso",
+      "new": "029"
+    },
+    {
+      "original": "Gama, o Guerreiro Imã",
+      "new": "030"
+    },
+    {
+      "original": "Guardião Celta",
+      "new": "031"
+    },
+    {
+      "original": "Gyakutenno Megami",
+      "new": "032"
+    },
+    {
+      "original": "Ilusionista sem Rosto",
+      "new": "033"
+    },
+    {
+      "original": "Jerry, Homem Feijão",
+      "new": "034"
+    },
+    {
+      "original": "Kairyu-Shin",
+      "new": "035"
+    },
+    {
+      "original": "Kraken Demônio",
+      "new": "036"
+    },
+    {
+      "original": "La Jinn, o Gênio Místico da Lâmpada",
+      "new": "037"
+    },
+    {
+      "original": "Lady da Fé",
+      "new": "038"
+    },
+    {
+      "original": "Lady Harpia",
+      "new": "039"
+    },
+    {
+      "original": "Mago Negro",
+      "new": "040"
+    },
+    {
+      "original": "Maldição do Dragão",
+      "new": "041"
+    },
+    {
+      "original": "Manipulador de Chamas",
+      "new": "042"
+    },
+    {
+      "original": "Masaki, o Espadachim Lendário",
+      "new": "043"
+    },
+    {
+      "original": "Neo Aqua Madoor",
+      "new": "044"
+    },
+    {
+      "original": "O Cavaleiro Sem Cabeça",
+      "new": "045"
+    },
+    {
+      "original": "O Grande Branco",
+      "new": "046"
+    },
+    {
+      "original": "O Juiz",
+      "new": "047"
+    },
+    {
+      "original": "O Presa de Prata",
+      "new": "048"
+    },
+    {
+      "original": "Ogre de Aço da Gruta Nº1",
+      "new": "049"
+    },
+    {
+      "original": "Paredes do Labirinto",
+      "new": "050"
+    },
+    {
+      "original": "PEIXE DE 7 CORES",
+      "new": "051"
+    },
+    {
+      "original": "Pequeno Anjo",
+      "new": "052"
+    },
+    {
+      "original": "Pequeno D",
+      "new": "053"
+    },
+    {
+      "original": "Pequeno Moth",
+      "new": "054"
+    },
+    {
+      "original": "Perna Direita de O Proibido",
+      "new": "055"
+    },
+    {
+      "original": "Perna Esquerda de O Proibido",
+      "new": "056"
+    },
+    {
+      "original": "Predador com Machado",
+      "new": "057"
+    },
+    {
+      "original": "Rainha Cosmos",
+      "new": "058"
+    },
+    {
+      "original": "Rainha das Folhas de Outono",
+      "new": "059"
+    },
+    {
+      "original": "Rei Caveira (Caveira Invocada)",
+      "new": "060"
+    },
+    {
+      "original": "Rei Rex de Duas Cabeças",
+      "new": "061"
+    },
+    {
+      "original": "Ryu-Kishin Potencializado",
+      "new": "062"
+    },
+    {
+      "original": "Ryu-ran",
+      "new": "063"
+    },
+    {
+      "original": "Sereia Encantadora",
+      "new": "064"
+    },
+    {
+      "original": "Servo Caveira",
+      "new": "065"
+    },
+    {
+      "original": "Slifer, o Dragão Celeste",
+      "new": "066"
+    },
+    {
+      "original": "Soldado de Pedra Gigante",
+      "new": "067"
+    },
+    {
+      "original": "Tecelã Alada",
+      "new": "068"
+    },
+    {
+      "original": "Tigre do Machado",
+      "new": "069"
+    },
+    {
+      "original": "Zoa",
+      "new": "070"
+    },
+    {
+      "original": "Zumbi com Armadura",
+      "new": "071"
+    }
+  ],
+  "trap-cards": [
+    {
+      "original": "Agitador de Terra",
+      "new": "000"
+    },
+    {
+      "original": "Apenas Sobremesas",
+      "new": "001"
+    },
+    {
+      "original": "Aperto Mental",
+      "new": "002"
+    },
+    {
+      "original": "Armadilha de Inversão",
+      "new": "003"
+    },
+    {
+      "original": "Armadilha Falsa",
+      "new": "004"
+    },
+    {
+      "original": "Assaltante de Túmulos",
+      "new": "005"
+    },
+    {
+      "original": "Atacar e Receber",
+      "new": "006"
+    },
+    {
+      "original": "Atenção!",
+      "new": "007"
+    },
+    {
+      "original": "Bloqueador de Armadilhas",
+      "new": "008"
+    },
+    {
+      "original": "Bloqueador de Magia",
+      "new": "009"
+    },
+    {
+      "original": "Buraco Armadilha de Espinhos",
+      "new": "010"
+    },
+    {
+      "original": "Buraco Armadilha",
+      "new": "011"
+    },
+    {
+      "original": "Cartolas Mágicas",
+      "new": "012"
+    },
+    {
+      "original": "Cilindro Mágico",
+      "new": "013"
+    },
+    {
+      "original": "Cobertura de Fogo",
+      "new": "014"
+    },
+    {
+      "original": "Corneta Celestial",
+      "new": "015"
+    },
+    {
+      "original": "Desejos Solenes",
+      "new": "016"
+    },
+    {
+      "original": "Espada Força da Luz",
+      "new": "017"
+    },
+    {
+      "original": "Feitiço Sombra",
+      "new": "018"
+    },
+    {
+      "original": "Força do Espelho",
+      "new": "019"
+    },
+    {
+      "original": "Goblin Larápio",
+      "new": "020"
+    },
+    {
+      "original": "Kunai com Corrente",
+      "new": "021"
+    },
+    {
+      "original": "Luz da Intervenção",
+      "new": "022"
+    },
+    {
+      "original": "Mudança",
+      "new": "023"
+    },
+    {
+      "original": "Negativação de Ataque",
+      "new": "024"
+    },
+    {
+      "original": "Oferenda Derradeira",
+      "new": "025"
+    },
+    {
+      "original": "Parede de Agulhas",
+      "new": "026"
+    },
+    {
+      "original": "Parede Dimensional",
+      "new": "027"
+    },
+    {
+      "original": "Parede Espelhada",
+      "new": "028"
+    },
+    {
+      "original": "Pirâmide de Luz",
+      "new": "029"
+    },
+    {
+      "original": "Presente do Elfo Místico",
+      "new": "030"
+    },
+    {
+      "original": "Retorno de uma Dimensão Diferente",
+      "new": "031"
+    },
+    {
+      "original": "Sete Ferramentas do Bandido",
+      "new": "032"
+    }
+  ]
+}
