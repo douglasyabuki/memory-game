@@ -79,3 +79,52 @@
   background: var(--color-neon-cyan);
   color: var(--color-surface-100);
 }
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    padding: 0.5rem;
+  }
+
+  .overlay {
+    padding: 1.5rem;
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .overlay h2 {
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .overlay button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .header h1 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .overlay {
+    padding: 1rem;
+    width: 95%;
+    border: 2px solid var(--color-electric-blue);
+  }
+
+  .overlay h2 {
+    font-size: 1.5rem;
+    margin: 0 0 0.75rem 0;
+  }
+
+  .overlay button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
