@@ -38,6 +38,11 @@ main {
   margin: 0 auto;
   max-width: 1280px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
   color: var(--color-text-primary);
   z-index: 6;
 }
