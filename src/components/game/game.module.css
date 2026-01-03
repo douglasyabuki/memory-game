@@ -1,0 +1,81 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  color: var(--color-text-primary);
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px var(--color-neon-cyan);
+  color: var(--color-text-accent);
+  margin: 0 0 1rem 0;
+}
+
+.gameArea {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  overflow-y: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(10, 14, 23, 0.95);
+  border: 4px solid var(--color-electric-blue);
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  z-index: 50;
+  box-shadow: 0 0 30px rgba(0, 85, 255, 0.5);
+}
+
+.overlay h2 {
+  font-size: 3rem;
+  color: var(--color-text-accent);
+  margin: 0 0 2rem 0;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px var(--color-neon-cyan);
+}
+
+.overlay button {
+  background: var(--color-electric-blue);
+  color: var(--color-text-primary);
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform 0.2s, background 0.2s;
+  box-shadow: 0 0 15px var(--color-deep-blue);
+}
+
+.overlay button:hover {
+  transform: scale(1.05);
+  background: var(--color-neon-cyan);
+  color: var(--color-surface-100);
+}

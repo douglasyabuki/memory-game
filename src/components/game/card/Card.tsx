@@ -1,5 +1,5 @@
+import { useSoundEffect } from "@/primitives/use-sound-effect";
 import { type Component } from "solid-js";
-import { useSoundEffect } from "../../primitives/use-sound-effect";
 import style from "./card.module.css";
 
 interface CardProps {
