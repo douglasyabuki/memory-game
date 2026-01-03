@@ -4,7 +4,7 @@ import {
 } from "@/types-and-variables/card-type";
 import { type GameCard } from "@/types-and-variables/game-card";
 import { type RenamingMap } from "@/types-and-variables/renaming-map";
-import renamingMapJson from "../../public/renaming_map.json";
+import renamingMapJson from "../renaming_map.json";
 
 const renamingMap = renamingMapJson as RenamingMap;
 
