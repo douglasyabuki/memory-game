@@ -16,7 +16,7 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
-.iconButton {
+.icon-button {
   background: none;
   border: none;
   cursor: pointer;
@@ -29,13 +29,13 @@
   transition: all 0.3s ease;
 }
 
-.iconButton:hover {
+.icon-button:hover {
   color: var(--color-neon-cyan);
   background: rgba(0, 243, 255, 0.1);
   transform: scale(1.1);
   box-shadow: 0 0 15px var(--color-neon-cyan);
 }
 
-.iconButton:active {
+.icon-button:active {
   transform: scale(0.95);
 }

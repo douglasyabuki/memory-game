@@ -32,7 +32,7 @@ export const Game: Component = () => {
           />
         </div>
 
-        <div class={style.gameArea}>
+        <div class={style["game-area"]}>
           {gameState() === "lost" && (
             <div class={style.overlay}>
               <h2>Game Over</h2>

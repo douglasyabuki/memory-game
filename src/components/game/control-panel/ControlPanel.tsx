@@ -16,7 +16,7 @@ interface ControlPanelProps {
 export const ControlPanel: Component<ControlPanelProps> = (props) => {
   return (
     <div class={style.panel}>
-      <A href="/" class={style.iconButton} title="Home">
+      <A href="/" class={style["icon-button"]} title="Home">
         <HomeIcon />
       </A>
 
@@ -27,14 +27,18 @@ export const ControlPanel: Component<ControlPanelProps> = (props) => {
       <div class={style.divider} />
 
       <button
-        class={style.iconButton}
+        class={style["icon-button"]}
         onClick={props.onToggleMute}
         title={props.isMuted ? "Unmute" : "Mute"}
       >
         <VolumeIcon isMuted={props.isMuted} />
       </button>
 
-      <button class={style.iconButton} onClick={props.onRetry} title="Retry">
+      <button
+        class={style["icon-button"]}
+        onClick={props.onRetry}
+        title="Retry"
+      >
         <RetryIcon />
       </button>
     </div>

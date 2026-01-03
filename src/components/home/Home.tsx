@@ -63,7 +63,7 @@ export const Home = () => {
 
         <A
           href={`/game?difficulty=${difficulty()}&type=${cardType()}`}
-          class={style.startButton}
+          class={style["start-button"]}
         >
           Start Game
         </A>
