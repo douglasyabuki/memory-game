@@ -3,6 +3,7 @@ import { type GameCard } from "@/types-and-variables/game-card";
 import { type GameDifficulty } from "@/types-and-variables/game-difficulty";
 import { createSignal } from "solid-js";
 import { generateDeck } from "./use-deck";
+import { useImagePreloader } from "./use-image-preloader";
 
 const DEAL_SPEED = 50;
 const FLIP_TIMEOUT = 5000;
@@ -15,6 +16,7 @@ export const useGameLogic = (type: CardType, difficulty: GameDifficulty) => {
   const [gameState, setGameState] = createSignal<"playing" | "won" | "lost">(
     "playing"
   );
+  const [imagesLoaded, setImagesLoaded] = createSignal(false);
 
   const getCardCount = (diff: GameDifficulty) => {
     switch (diff) {
@@ -44,31 +46,50 @@ export const useGameLogic = (type: CardType, difficulty: GameDifficulty) => {
     setIsProcessing(true);
     setLives(3);
     setFlippedCards([]);
+    setImagesLoaded(false);
 
-    setTimeout(() => {
-      const count = getCardCount(difficulty);
-      const fullDeck = generateDeck(type, count).map((c) => ({
-        ...c,
-        isFlipped: false,
-      }));
+    const count = getCardCount(difficulty);
+    const fullDeck = generateDeck(type, count).map((c) => ({
+      ...c,
+      isFlipped: false,
+    }));
 
-      let currentIndex = 0;
+    // Extract unique image URLs for preloading
+    const imageUrls = [...new Set(fullDeck.map((card) => card.image))];
+    const { imagesLoaded: preloadComplete, preloadImages } =
+      useImagePreloader(imageUrls);
 
-      dealInterval = setInterval(() => {
-        if (currentIndex >= fullDeck.length) {
-          clearInterval(dealInterval);
+    // Start preloading
+    preloadImages();
 
-          flipTimeout = setTimeout(() => {
-            setCards((prev) => prev.map((c) => ({ ...c, isFlipped: true })));
-            setIsProcessing(false);
-          }, FLIP_TIMEOUT);
-          return;
-        }
+    // Wait for images to load before dealing cards
+    const checkImagesLoaded = setInterval(() => {
+      if (preloadComplete()) {
+        clearInterval(checkImagesLoaded);
+        setImagesLoaded(true);
 
-        const nextCard = fullDeck[currentIndex];
-        setCards((prev) => [...prev, nextCard]);
-        currentIndex++;
-      }, DEAL_SPEED);
+        setTimeout(() => {
+          let currentIndex = 0;
+
+          dealInterval = setInterval(() => {
+            if (currentIndex >= fullDeck.length) {
+              clearInterval(dealInterval);
+
+              flipTimeout = setTimeout(() => {
+                setCards((prev) =>
+                  prev.map((c) => ({ ...c, isFlipped: true }))
+                );
+                setIsProcessing(false);
+              }, FLIP_TIMEOUT);
+              return;
+            }
+
+            const nextCard = fullDeck[currentIndex];
+            setCards((prev) => [...prev, nextCard]);
+            currentIndex++;
+          }, DEAL_SPEED);
+        }, 100);
+      }
     }, 100);
   };
 
@@ -131,5 +152,6 @@ export const useGameLogic = (type: CardType, difficulty: GameDifficulty) => {
     gameState,
     initGame,
     handleFlip,
+    imagesLoaded,
   };
 };

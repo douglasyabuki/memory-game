@@ -10,10 +10,11 @@ import style from "./game.module.css";
 export const Game: Component = () => {
   const [params] = useSearchParams();
   const [isMuted, setIsMuted] = createSignal(false);
-  const { cards, lives, gameState, initGame, handleFlip } = useGameLogic(
-    (params.type as CardType) || "regular-monster-cards",
-    (params.difficulty as GameDifficulty) || "easy"
-  );
+  const { cards, lives, gameState, initGame, handleFlip, imagesLoaded } =
+    useGameLogic(
+      (params.type as CardType) || "regular-monster-cards",
+      (params.difficulty as GameDifficulty) || "easy"
+    );
 
   createEffect(() => {
     initGame();
@@ -33,6 +34,12 @@ export const Game: Component = () => {
         </div>
 
         <div class={style["game-area"]}>
+          {!imagesLoaded() && (
+            <div class={style.overlay}>
+              <h2>Loading...</h2>
+            </div>
+          )}
+
           {gameState() === "lost" && (
             <div class={style.overlay}>
               <h2>Game Over</h2>
