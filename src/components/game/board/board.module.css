@@ -1,14 +1,14 @@
 .board {
   display: grid;
   grid-template-columns: repeat(var(--col-count, 4), minmax(0, 1fr));
-  gap: min(1rem, 1.5vh);
+  gap: min(0.75rem, 1vh);
   width: 100%;
   height: 100%;
   max-width: min(1000px, 90vw);
   max-height: 100%;
   justify-items: center;
   align-items: center;
-  padding: min(1rem, 2vh);
+  padding: min(0.5rem, 1vh);
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -16,6 +16,7 @@
 .card-wrapper {
   width: 100%;
   max-width: min(120px, 15vw);
+  max-height: min(175px, 18vh);
   aspect-ratio: 59 / 86;
   display: flex;
   justify-content: center;
@@ -24,22 +25,24 @@
 
 @media (max-width: 768px) {
   .board {
-    gap: min(0.75rem, 1vh);
-    padding: min(0.75rem, 1.5vh);
-  }
-
-  .card-wrapper {
-    max-width: min(100px, 18vw);
-  }
-}
-
-@media (max-width: 480px) {
-  .board {
     gap: min(0.5rem, 0.75vh);
     padding: min(0.5rem, 1vh);
   }
 
   .card-wrapper {
+    max-width: min(100px, 18vw);
+    max-height: min(146px, 16vh);
+  }
+}
+
+@media (max-width: 480px) {
+  .board {
+    gap: min(0.4rem, 0.5vh);
+    padding: min(0.4rem, 0.75vh);
+  }
+
+  .card-wrapper {
     max-width: min(80px, 20vw);
+    max-height: min(116px, 14vh);
   }
 }
