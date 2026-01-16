@@ -6,8 +6,8 @@
   height: 100%;
   max-width: min(1000px, 90vw);
   max-height: 100%;
-  justify-items: center;
-  align-items: center;
+  justify-items: start;
+  align-items: start;
   padding: min(0.5rem, 1vh);
   margin: 0 auto;
   box-sizing: border-box;
