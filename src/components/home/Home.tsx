@@ -31,7 +31,7 @@ export const Home = () => {
                   onChange={(e) => setDifficulty(e.currentTarget.value)}
                 />
                 <span>
-                  {d.name} ({d.cards} cards)
+                  {d.name} ({d.cards} cards, {d.lives} lives)
                 </span>
               </label>
             ))}

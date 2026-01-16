@@ -14,17 +14,17 @@ interface BoardProps {
 const getColumns = (difficulty: GameDifficulty) => {
   switch (difficulty) {
     case "easy":
-      return 6;
+      return 4;
     case "medium":
-      return 6;
+      return 4;
     case "hard":
-      return 8;
+      return 5;
     case "expert":
-      return 8;
-    case "hell":
-      return 10;
-    default:
       return 6;
+    case "hell":
+      return 7;
+    default:
+      return 4;
   }
 };
 

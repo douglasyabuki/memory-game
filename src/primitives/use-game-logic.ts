@@ -1,6 +1,9 @@
 import { type CardType } from "@/types-and-variables/card-type";
 import { type GameCard } from "@/types-and-variables/game-card";
-import { type GameDifficulty } from "@/types-and-variables/game-difficulty";
+import {
+  GAME_DIFFICULTIES,
+  type GameDifficulty,
+} from "@/types-and-variables/game-difficulty";
 import { createSignal } from "solid-js";
 import { generateDeck } from "./use-deck";
 import { useImagePreloader } from "./use-image-preloader";
@@ -18,23 +21,6 @@ export const useGameLogic = (type: CardType, difficulty: GameDifficulty) => {
   );
   const [imagesLoaded, setImagesLoaded] = createSignal(false);
 
-  const getCardCount = (diff: GameDifficulty) => {
-    switch (diff) {
-      case "easy":
-        return 12;
-      case "medium":
-        return 18;
-      case "hard":
-        return 24;
-      case "expert":
-        return 32;
-      case "hell":
-        return 50;
-      default:
-        return 12;
-    }
-  };
-
   let dealInterval: number | undefined;
   let flipTimeout: number | undefined;
 
@@ -44,12 +30,15 @@ export const useGameLogic = (type: CardType, difficulty: GameDifficulty) => {
     setCards([]);
     setGameState("playing");
     setIsProcessing(true);
-    setLives(3);
     setFlippedCards([]);
     setImagesLoaded(false);
 
-    const count = getCardCount(difficulty);
-    const fullDeck = generateDeck(type, count).map((c) => ({
+    const difficultyConfig = GAME_DIFFICULTIES.find(
+      (d) => d.id === difficulty
+    )!;
+    setLives(difficultyConfig.lives);
+
+    const fullDeck = generateDeck(type, difficultyConfig.cards).map((c) => ({
       ...c,
       isFlipped: false,
     }));
