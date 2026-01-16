@@ -60,6 +60,7 @@
   color: var(--color-text-secondary);
   border: 1px solid transparent;
   background: rgba(255, 255, 255, 0.05);
+  text-wrap: nowrap;
 }
 
 .option:hover {

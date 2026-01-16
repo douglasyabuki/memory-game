@@ -30,9 +30,7 @@ export const Home = () => {
                   checked={difficulty() === d.id}
                   onChange={(e) => setDifficulty(e.currentTarget.value)}
                 />
-                <span>
-                  {d.name} ({d.cards} cards, {d.lives} lives)
-                </span>
+                <span>{d.name}</span>
               </label>
             ))}
           </div>
