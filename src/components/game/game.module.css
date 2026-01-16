@@ -1,15 +1,17 @@
 .container {
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   color: var(--color-text-primary);
   position: relative;
+  overflow: hidden;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 1rem;
+  padding: 0.75rem;
+  gap: 0.5rem;
   box-sizing: border-box;
 }
 
@@ -18,7 +20,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
+  flex-shrink: 0;
 }
 
 .header h1 {
@@ -26,16 +28,17 @@
   text-transform: uppercase;
   text-shadow: 0 0 10px var(--color-neon-cyan);
   color: var(--color-text-accent);
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.5rem 0;
 }
 
 .game-area {
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   position: relative;
-  overflow-y: auto;
+  overflow: hidden;
+  min-height: 0;
 }
 
 .overlay {
