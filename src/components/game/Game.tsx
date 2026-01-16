@@ -1,6 +1,9 @@
 import { useGameLogic } from "@/primitives/use-game-logic";
 import { type CardType } from "@/types-and-variables/card-type";
-import { type GameDifficulty } from "@/types-and-variables/game-difficulty";
+import {
+  GAME_DIFFICULTIES,
+  type GameDifficulty,
+} from "@/types-and-variables/game-difficulty";
 import { useSearchParams } from "@solidjs/router";
 import { createEffect, createSignal, type Component } from "solid-js";
 import { Board } from "./board/Board";
@@ -10,11 +13,15 @@ import style from "./game.module.css";
 export const Game: Component = () => {
   const [params] = useSearchParams();
   const [isMuted, setIsMuted] = createSignal(false);
+  const difficulty = (params.difficulty as GameDifficulty) || "easy";
   const { cards, lives, gameState, initGame, handleFlip, imagesLoaded } =
     useGameLogic(
       (params.type as CardType) || "regular-monster-cards",
-      (params.difficulty as GameDifficulty) || "easy"
+      difficulty
     );
+
+  const maxLives =
+    GAME_DIFFICULTIES.find((d) => d.id === difficulty)?.lives ?? 3;
 
   createEffect(() => {
     initGame();
@@ -27,6 +34,7 @@ export const Game: Component = () => {
           <h1>Solid Memory Game</h1>
           <ControlPanel
             lives={lives()}
+            maxLives={maxLives}
             onRetry={initGame}
             isMuted={isMuted()}
             onToggleMute={() => setIsMuted((p) => !p)}

@@ -8,6 +8,7 @@ import { LifeContainer } from "./LifeContainer";
 
 interface ControlPanelProps {
   lives: number;
+  maxLives: number;
   onRetry: () => void;
   isMuted: boolean;
   onToggleMute: () => void;
@@ -22,7 +23,7 @@ export const ControlPanel: Component<ControlPanelProps> = (props) => {
 
       <div class={style.divider} />
 
-      <LifeContainer lives={props.lives} />
+      <LifeContainer lives={props.lives} maxLives={props.maxLives} />
 
       <div class={style.divider} />
 
